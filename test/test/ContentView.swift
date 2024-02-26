@@ -12,10 +12,15 @@ struct ContentView: View {
     //the variable that keeps track of the count
     @State private var count: Int = 0
     
-    //function that increases the count by 1
+    //function that increases the count by 1 if the count is less than 50
     func increaseCount(){
-        //adding 1 to the count
-        count += 1
+        
+        //if statement to check if the count is less than 50
+        if count < 50{
+            //adding 1 to the count
+            count += 1
+        }
+        
     }
     
     //function that decreases the count by 1 if the count is greater than 0
